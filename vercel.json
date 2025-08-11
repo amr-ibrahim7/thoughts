@@ -20,7 +20,7 @@
     },
     {
       "source": "/(.*)",
-      "destination": "/thoughts_fe/dist/index.html"
+      "destination": "/index.html"
     }
   ]
 }
