@@ -4,6 +4,8 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # Node modules
 thoughts_fe/node_modules/
@@ -11,12 +13,24 @@ thoughts_be/node_modules/
 
 # Environment variables
 thoughts_fe/.env
+thoughts_fe/.env.local
+thoughts_fe/.env.*.local
 thoughts_be/.env
+thoughts_be/.env.local
+thoughts_be/.env.*.local
+
 
 # Build output
 thoughts_fe/dist/
+thoughts_be/dist/
 
 # Editor directories and files
-.vscode/
-.idea/
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
