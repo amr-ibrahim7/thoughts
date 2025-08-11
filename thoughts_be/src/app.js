@@ -20,10 +20,10 @@ app.get("/", (req, res) => {
 app.use("/users", usersRouter);
 app.use("/posts", postsRouter);
 
-// const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
-// app.listen(PORT, () => {
-//   console.log(`running!! on port ${PORT}`);
-// });
+app.listen(PORT, () => {
+  console.log(`running!! on port ${PORT}`);
+});
 
 export default app;

@@ -227,7 +227,7 @@ const remainingPosts = displayPosts.slice(1);
                   <div className="flex items-center gap-4 pt-4">
                     <Avatar className="w-14 h-14 ring-2 ring-primary/20">
                       <AvatarImage
-                        src={featuredPost.author.profilePicture}
+                        src={featuredPost?.author.profilePicture}
                         className="object-cover w-full h-full"
                       />
                       <AvatarFallback className="bg-primary text-primary-foreground text-lg">
