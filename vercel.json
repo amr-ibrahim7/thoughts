@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "thoughts_be/src/app.js",
+      "src": "thoughts_be/index.js",
       "use": "@vercel/node"
     },
     {
@@ -15,12 +15,12 @@
   ],
   "rewrites": [
     {
-      "src": "/api/(.*)",
-      "destination": "/thoughts_be/src/app.js"
+      "source": "/api/(.*)",
+      "destination": "/thoughts_be/index.js"
     },
     {
-      "src": "/(.*)",
-      "destination": "/thoughts_fe/dist/index.html"
+      "source": "/(.*)",
+      "destination": "/thoughts_fe/index.html"
     }
   ]
 }
