@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "thoughts_be/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "thoughts_fe/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/thoughts_be/index.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/thoughts_fe/index.html"
+    }
+  ]
+}
